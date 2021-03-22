@@ -4,7 +4,7 @@ from django.shortcuts import render
 @method_decorator(login_required, name="dispatch")
 class EmployeeView(TemplateView):
     # our hybrid template, shown above
-    template_name = "myapp/employee_home.html"
+    template_name = "employee_home.html"
 
     def get_context_data(self, **kwargs):
         # passing the department choices to the template in the context

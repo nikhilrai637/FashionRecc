@@ -2,9 +2,9 @@
 {% load static %}
 {% block content %}
     <body>
-  <!-- div that the JavaScript framework will render in -->
-  <div id="js-framework-home"></div>
-  <!-- bundle file with our JavaScript application logic -->
-  <script src="{% static 'js-bundle.js' %}"></script>
+        <div id="js-framework-home"></div>
+        <!-- making the department_choices variable avialable in the DOM -->
+        {{ department_choices|json_script:'department-choices' }}
+        <script src="{% static 'js-bundle.js' %}"></script>
     </body>
 {% endblock %}
