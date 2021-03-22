@@ -1,6 +1,4 @@
 from django.db import models
-from deepfake import settings
-# Create your models here.
 class Employee(models.Model):
     DEPARTMENT_CHOICES = (
         ('hr', 'Human Resources'),
