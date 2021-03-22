@@ -4,5 +4,5 @@ import Employee from './Employee';
 
 ReactDOM.render(
   <Employee/>,
-  document.getElementById('root')
+  document.getElementById('js-framework-home')
 );
